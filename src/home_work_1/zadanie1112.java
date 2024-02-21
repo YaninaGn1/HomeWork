@@ -1,4 +1,4 @@
-package HomeWork1; // название пакета
+package home_work_1; // название пакета
 
 import java.util.Scanner; // импорт пакета java.unit
 
