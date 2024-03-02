@@ -12,14 +12,20 @@ public class Zadanie111 {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите число ");
         int n = in.nextInt();
+
         int i = 1;
         int proiz = 1;
         if (n > 0) {
-             while (i <= n) {
-                 proiz = proiz * i;
+             while (i < n) {
                  i++;
+                 proiz = proiz * i;
+                 System.out.print(i);
+
+                 if (i != n) {
+                     System.out.print("*");
+                 }
              }
-            System.out.println("Произведение " + proiz);
+            System.out.print( "=" + proiz);
         } else {
         System.out.println("Неправильные данные " );
          }
