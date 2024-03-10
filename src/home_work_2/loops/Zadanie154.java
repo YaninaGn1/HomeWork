@@ -22,6 +22,6 @@ public class Zadanie154 {
            n2 = n3;
             }
                 System.out.println();
-        }
-     }
+    }
+}
 

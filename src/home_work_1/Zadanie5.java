@@ -10,10 +10,10 @@ public class Zadanie5 {
         System.out.print("write vacation is true or false ");
         boolean vacation = console.nextBoolean();
 
-    //    static boolean sleepIn (boolean weekday, boolean vacation )  ;
-           //  if (weekday == false && vacation == false) {
-         //       System.out.println("Иди на работу");
-        //        return true;
+  //   static boolean sleepIn (boolean weekday, boolean vacation )  ;
+         //   if (weekday == false && vacation == false) {
+              System.out.println("Иди на работу");
+          //    return true;
         //    } else if (weekday == false && vacation == true) {
                 System.out.println("Спи");
            //     return true;
@@ -25,7 +25,7 @@ public class Zadanie5 {
       //          return true;
             }
         }
-   // }
+ // }
 
 
 

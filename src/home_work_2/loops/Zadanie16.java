@@ -9,7 +9,7 @@ public class Zadanie16 {
         int j;
 
         for (i = 1; i <= 10; i++ ) {
-            for (j = 1; j <= 5; j++){
+            for (j = 2; j <= 5; j++){
                 System.out.print( j + "x" + i + "="+ (i*j) +"\t" );
             }
             System.out.println();
@@ -17,11 +17,11 @@ public class Zadanie16 {
         System.out.println();
 
           for (i = 1; i <= 10; i++ ) {
-               for (j = 6; j <= 10; j++){
+               for (j = 6; j <= 9; j++){
                    System.out.print( j + "x" + i + "="+ (i*j)+"\t" );
                 }
                System.out.println();
          }
-        }
     }
+}
 
