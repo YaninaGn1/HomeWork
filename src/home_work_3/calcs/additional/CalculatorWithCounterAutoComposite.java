@@ -43,7 +43,7 @@ public class CalculatorWithCounterAutoComposite {
     /**
      * Модуль числа
      */
-    public int modul (int a) {
+    public double modul (double a) {
         calculatorWithMathCopy.modul(a);
         return calculatorWithMathCopy.modul(a);
     }

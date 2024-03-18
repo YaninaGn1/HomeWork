@@ -11,6 +11,6 @@ public interface ICalculator {
       double slozenie(double a, double b);
 
       double stepen(double a);
-      int modul(int a);
+ double modul(double a);
       double kvadratnyjkoren(double a);
 }

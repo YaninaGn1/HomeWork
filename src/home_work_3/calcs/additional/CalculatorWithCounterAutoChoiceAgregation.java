@@ -105,7 +105,7 @@ public class CalculatorWithCounterAutoChoiceAgregation {
             /**
              * Модуль числа
              */
-            public int modul ( int a){
+            public double modul ( double a){
                 schet = i++;
                 if (this.calculator1 == null && this.calculator2 == null) {
                     double c = calculator3.modul(a);

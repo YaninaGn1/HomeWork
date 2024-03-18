@@ -51,8 +51,8 @@ public class CalculatorWithMathCopy implements ICalculator {
     /**
      * Модуль числа
      */
-    public int modul (int a) {
-        int mod = Math.abs(a);
+    public double modul (double a) {
+        double mod = Math.abs(a);
         return mod;
     }
 

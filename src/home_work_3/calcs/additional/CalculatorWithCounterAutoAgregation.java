@@ -55,9 +55,9 @@ public class CalculatorWithCounterAutoAgregation {
       /**
        * Модуль числа
        */
-      public int modul (int a) {
+      public double modul (double a) {
           schet = i++;
-          int mod = calculator1.modul (a);
+          double mod = calculator1.modul (a);
           return mod;
       }
 

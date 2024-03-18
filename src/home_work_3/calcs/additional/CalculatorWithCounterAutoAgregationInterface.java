@@ -37,7 +37,7 @@ public class CalculatorWithCounterAutoAgregationInterface {
         return a*a;
     }
 
-    public int modul(int a){
+    public double modul(double a){
         schet = i++;
         return Math.abs(a);
     }

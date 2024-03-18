@@ -32,7 +32,7 @@ public class CalculatorWithMemory {
         return save1 = a*a;
     }
 
-    public int modul(int a){
+    public double modul(double a){
         return save1 = Math.abs(a);
     }
 
@@ -46,6 +46,6 @@ public class CalculatorWithMemory {
     public double load(){
        save1 = 0;
        load1 = save1  ;
-
+return load1;
     }
 }

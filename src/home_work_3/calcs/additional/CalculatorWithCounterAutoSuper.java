@@ -64,7 +64,7 @@ public class CalculatorWithCounterAutoSuper extends  CalculatorWithMathExtends{
      * @param a
      * @return
      */
-    public int modul (int a) {
+    public double modul (double a) {
         schet = i++;
         super.modul(a);
         return super.modul(a);
