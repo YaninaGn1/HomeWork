@@ -10,12 +10,11 @@ public class CalculatorWithCounterClassicMain {
         calculatorWithCounterClassic.umnozenie(15,7);
         calculatorWithCounterClassic.incrementCountOperration();
 
-        double a = 4.1  + calculatorWithCounterClassic.umnozenie(15,7) +  calculatorWithCounterClassic.delenie(28,5);
+        double a = 4.1  + calculatorWithCounterClassic.umnozenie(15,7) +   calculatorWithCounterClassic.stepen(calculatorWithCounterClassic.delenie(28,5));
         calculatorWithCounterClassic.incrementCountOperration();
 
-        calculatorWithCounterClassic.stepen(a);
         calculatorWithCounterClassic.incrementCountOperration();
 
-        System.out.println(calculatorWithCounterClassic.stepen(a));
+        System.out.println(a);
        }
 }

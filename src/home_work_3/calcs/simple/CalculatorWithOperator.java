@@ -69,8 +69,8 @@ public class CalculatorWithOperator implements ICalculator {
     /**
      * Модуль числа
      */
-    public int modul (int a) {
-        int mod;
+    public double modul (double a) {
+        double mod;
         if (a > 0)
             mod = a;
         else mod = a * (-1);

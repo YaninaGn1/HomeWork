@@ -2,14 +2,15 @@ package home_work_3.calcs.simple;
 
 public class CalculatorWithMathCopyMain  {
     public static void main(String[] args) {
+        //double a = 4.1 + (15 * 7) + (28 / 5)*(28 / 5)
         CalculatorWithMathCopy calculatorWithMathCopy = new CalculatorWithMathCopy();
 
         calculatorWithMathCopy.delenie(28,5);
         calculatorWithMathCopy.umnozenie(15,7);
 
-        double a = 4.1  + calculatorWithMathCopy.umnozenie(15,7) +  calculatorWithMathCopy.delenie(28,5);
+        double a = 4.1  + calculatorWithMathCopy.umnozenie(15,7) +   calculatorWithMathCopy.stepen(calculatorWithMathCopy.delenie(28,5));
 
-        calculatorWithMathCopy.stepen(a);
-        System.out.println(calculatorWithMathCopy.stepen(a));
+
+        System.out.println(a);
     }
 }

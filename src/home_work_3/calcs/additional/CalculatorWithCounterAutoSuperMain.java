@@ -8,11 +8,9 @@ public class CalculatorWithCounterAutoSuperMain {
 
         calculatorWithCounterAutoSuper.umnozenie(15,7);
 
-        double a = 4.1  + calculatorWithCounterAutoSuper.umnozenie(15,7) +  calculatorWithCounterAutoSuper.delenie(28,5);
+        double a = 4.1  + calculatorWithCounterAutoSuper.umnozenie(15,7) + calculatorWithCounterAutoSuper.stepen(calculatorWithCounterAutoSuper.delenie(28,5));
 
-        calculatorWithCounterAutoSuper.stepen(a);
-
-        System.out.println(calculatorWithCounterAutoSuper.stepen(a));
+        System.out.println(a);
         System.out.println(calculatorWithCounterAutoSuper.getCountOperation());
     }
 }
