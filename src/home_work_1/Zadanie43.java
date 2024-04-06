@@ -2,18 +2,24 @@ package home_work_1;
 import java.util.Scanner;
 
 public class Zadanie43 {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Input  a: ");
-        int a = in.nextInt();
 
-        System.out.print("Input  b ");
-        int b = in.nextInt();
+    private double a,b;
+    public Zadanie43(){
 
-        if (a % b == 0){
-            System.out.print("chisla Delyatsa" );
-            } else {
-            System.out.print("chisla Ne Delyatsa" );
+        this.a = a;
+        this.b = b;
+       }
+    /**.
+     * 4.3 Проверка делимости одного числа на другое
+      */
+    public static double delimost (double a, double b) {
+        if (a % b == 0) {
+            System.out.println("chisla Delyatsa");
+        } else {
+            System.out.println("chisla Ne Delyatsa");
         }
+        return a % b;
     }
+
 }
+

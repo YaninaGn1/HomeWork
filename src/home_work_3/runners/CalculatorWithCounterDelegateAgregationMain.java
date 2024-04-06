@@ -1,5 +1,6 @@
-package home_work_3.calcs.additional;
+package home_work_3.runners;
 
+import home_work_3.calcs.additional.CalculatorWithCounterAutoAgregation;
 import home_work_3.calcs.simple.CalculatorWithMathCopy;
 
 public class CalculatorWithCounterDelegateAgregationMain {

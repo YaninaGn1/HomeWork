@@ -1,14 +1,12 @@
 package home_work_1;
 
-import java.util.Scanner;
+import home_work_1.api.ICommunicationPrinter;
 
-public class Zadanie63 {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.print("write name ");
-        String name1 = in.nextLine();
 
-        switch (name1){
+public class Zadanie63 implements ICommunicationPrinter {
+    public String welcom(String name){
+
+        switch (name){
             case "Вася":
                 System.out.println("Привет");
                 System.out.println("Я тебя так долго ждал");
@@ -19,5 +17,6 @@ public class Zadanie63 {
             default:
                 System.out.print("Добрый день, а вы кто?");
         }
+        return null;
     }
 }

@@ -1,22 +1,25 @@
 package home_work_1;
 
-import java.util.Scanner;
-
 public class Zadanine44 {
+    private double a ;
 
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Input  a: ");
-        int a = in.nextInt();
+    public Zadanine44(){
 
-        System.out.print("Если нужно перевести в килобайты, введите 1, иначе 2 ");
-        int k = in.nextInt();
+        this.a = a;
+         }
 
-
-        if (k == 1){
-            System.out.print("Колличество килобайт " + (a * 1024) );
+    /** 4.4 Перевести байты в килобайты или наоборот
+     *  вернуть  0.0 если перевод удался
+     *  вернуть  -1.0 если перевод не удался
+     */
+    public static double perevod(double a){
+        if (a > 0){
+            System.out.println("Колличество килобайт " + (a * 1024) );
+            System.out.println("Колличество байт " + (a / 1024) );
+            return 0;
         }  else{
-            System.out.print("Колличество байт " + (a / 1024) );
+            System.out.println("Введите правильное число");
+            return -1;
         }
     }
 

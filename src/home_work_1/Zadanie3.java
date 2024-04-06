@@ -11,10 +11,11 @@ public class Zadanie3 {
 
         System.out.println(Math.cbrt(125));
 
+        System.out.println(Math.ceil(3.8));
+
         for (int i = 0; i < 5; i++) {
             System.out.println(Math.random());
         }
 
-        System.out.println(Math.ceil(3.8));
     }
 }

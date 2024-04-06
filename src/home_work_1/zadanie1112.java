@@ -8,6 +8,7 @@ public class zadanie1112 { // название класса
 
             Scanner in = new Scanner(System.in); //.создаем объект класса Scanner
             System.out.print("Input a number1: "); // ввод числа 1 // например 55 в двоичном 110111
+
             int num1 = in.nextInt(); //присвоить значение переменной num1
 
 

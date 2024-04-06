@@ -13,6 +13,5 @@ public class zadanie13 {
         // int  j = a >> b;
         // int o = a >>> b;
 // Побитовые операции приметяются только  к целочисленными типам
-        System.out.println();
     }
 }

@@ -1,13 +1,19 @@
 package home_work_1;
 
 public class Zadanie46 {
-    public static void main(String[] args) {
-        int d = 2024;
+   private int d = 2024;
+        /**
+         * 4.6 Определить високосный год или нет
+         */
 
+public static double proverka(int d){
         if (d % 4 == 0) {
-            System.out.print("Год высокостный");
+            System.out.println("Год высокостный");
+
         } else {
-            System.out.print("Год невысокостный");
+            System.out.println("Год невысокостный");
+
         }
+        return d;
      }
 }

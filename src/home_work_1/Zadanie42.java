@@ -1,26 +1,26 @@
 package home_work_1;
-import java.util.Scanner;
 
 public class Zadanie42 {
-    public static void main(String[] args) {
+    private double a, b, c;
+    public Zadanie42(){
 
-        Scanner in = new Scanner(System.in);
-        System.out.print("Input  a: ");
-        int a = in.nextInt();
-
-        System.out.print("Input  b ");
-       int b = in.nextInt();
-
-        System.out.print("Input  c ");
-        int c = in.nextInt();
-
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
+    /**
+     * 4.2 Среди трёх чисел найти среднее
+     */
+   public static double srednie(double a, double b, double c){
         if (b < c & b > a){
             System.out.println("среднее " + b);
+            return 1;
         } else if (b < a & a < c){
-
                 System.out.println("среднее " + a);
+            return 0;
             } else {
                 System.out.println("среднее " + c);
+            return -1;
             }
         }
 
