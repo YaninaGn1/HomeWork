@@ -6,6 +6,7 @@ import home_work_2.Utils.ArraysUtils;
 public class ArrayIteration {
     private  static int[] arrayFromConsole = (new ArraysUtils()).arrayFromConsole();
     private static int i =0;
+    private static  String k = "";
 
     public static void main(String[] args) {
         /*
@@ -34,6 +35,7 @@ public class ArrayIteration {
             System.out.println(" ");
         }
         System.out.println("_____ ");
+
         for (int i : arrayFromConsole) {
 
             System.out.print(i + " ");
@@ -63,63 +65,75 @@ public class ArrayIteration {
   /*  2.2.2. Вывести каждый второй элемент массива в консоль.
    */
 
-    public static void metod2 (){
-            for (int i = 0; i < arrayFromConsole.length; i = i + 2) {
+    public static void metod2 () {
+        for (int i = 0; i < arrayFromConsole.length; i = i + 1) {
+            if (i % 2 != 0) {
+                System.out.print(arrayFromConsole[i] + " ");
 
-            System.out.print(arrayFromConsole[i] + " ");
-            System.out.println(" ");
-        }
-        System.out.println("_____ ");
+            }
 
-        for (int i : arrayFromConsole ){
-            System.out.print((i+2) + " ");
-            System.out.println(" ");
-        }
-        System.out.println("_____");
-
-
-        while (i < arrayFromConsole.length) {
-            System.out.println(arrayFromConsole[i] + " ");
-            i = i + 2;
         }
 
+        int k = 0;
+        for (int i : arrayFromConsole) {
+            if (k % 2 != 0) {
+                System.out.println(i + " ");
+            }
+            k = k + 1;
+            System.out.println("_____");
 
-        System.out.println("_____");
-        do {
-            System.out.println(arrayFromConsole[i] + " ");
-            i = i - 2;
-        } while (i < arrayFromConsole.length) ;
 
+            i = 0;
+            while (i < arrayFromConsole.length) {
+                if (i % 2 != 0) {
+                    System.out.println(arrayFromConsole[i] + " ");
+                }
+                i = i + 1;
+            }
+
+
+            System.out.println("_____");
+            i = 0;
+            do {
+                if (i % 2 != 0) {
+                    System.out.println(arrayFromConsole[i] + " ");
+                }
+                i = i + 1;
+            } while (i < arrayFromConsole.length);
+
+        }
     }
 
     /* 2.2.3. Вывести все элементы массива в консоль в обратном порядке.
          */
-    public static void metod3 (){
-          for ( i = arrayFromConsole.length; i >= 0; i --) {
+    public static void metod3(){
+        for (i = arrayFromConsole.length - 1; i >= 0; i--) {
 
             System.out.print(arrayFromConsole[i] + " ");
-            System.out.println(" ");
         }
+        System.out.println("_____");
 
-        System.out.println("_____ ");
-
-        for (int i : arrayFromConsole ){
-            System.out.print(i + " ");
-            System.out.println(" ");
-        }
+            for (int i : arrayFromConsole ){
+                k = i + " " + k;
+            }
+            System.out.print(k);
 
         System.out.println("_____");
 
+        i = arrayFromConsole.length - 1;
         while (i >= 0) {
 
-            i --;
             System.out.println(arrayFromConsole[i] + " ");
-            System.out.println("_____");
+            i = i -1;
         }
+
+        i = arrayFromConsole.length-1;
         do {
-            i --;
+            System.out.println(arrayFromConsole[i] + " ");
+            i = i -1;
         } while (i >= 0) ;
-        System.out.println(arrayFromConsole[i] + " ");
+
     }
 }
+
 
