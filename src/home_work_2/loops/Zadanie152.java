@@ -1,18 +1,23 @@
 package home_work_2.loops;
 import java.util.Random;
 public class Zadanie152 {
-    public static void main(String[] args) {
-        int i;
+    /**
+     * 1.5.2. Вероятность четных случайных чисел
+     */
+   private static int i;
+   private static int i1 = 0;
+   private static int v = 0;
+    private static int x = 100;
 
-        Random rnd = new Random (1000);
-        int k = rnd.nextInt();
+    public static int rnd(){
 
-        for (i = 1;i <= 1000;) {
-            if (k % 2 == 0) {
-                i = i++;
-            } else {
-                System.out.println("Нет четных чисел ");
-            }
+        for (i = 0;i < 1000;i++) {
+        int k = v + (int) (Math.random() * x);
+        if (k % 2 == 0) {
+            i1 += 1;
         }
+    }
+
+        return i1;
     }
 }

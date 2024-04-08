@@ -5,31 +5,29 @@
  */
 package home_work_2.loops;
 
-import java.util.Scanner;
 public class Zadanie111 {
-    public static void main(String[] args) {
 
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите число ");
-        int n = in.nextInt();
-
+    public  static int  umnozenie(int n) {
         int i = 1;
         int proiz = 1;
         if (n > 0) {
-             while (i < n) {
-                 i++;
-                 proiz = proiz * i;
-                 System.out.print(i);
+            while (i < n) {
+                i++;
+                proiz = proiz * i;
+                System.out.print(i);
 
-                 if (i != n) {
-                     System.out.print("*");
-                 }
-             }
-            System.out.print( "=" + proiz);
+                if (i != n) {
+                    System.out.print("*");
+                }
+            }
+            System.out.println( "=" + proiz);
         } else {
-        System.out.println("Неправильные данные " );
-         }
+            System.out.println("Неправильные данные " );
+        }
+        System.out.println("______ " );
+        return 0;
     }
+
 }
 
 

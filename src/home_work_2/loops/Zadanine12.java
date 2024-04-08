@@ -1,31 +1,34 @@
 /*
 1.2. Все цифры из числа введенного через аргумент к исполняемой программе перемножить между собой и вывести ход вычислений в консоль. Пользователь обязан ввести целое число. Если ввели не целое то выдать сообщение о том что пользователь ввёл некорректные данные.
  */
-package loops;
+package home_work_2.loops;
 
 import java.util.Scanner;
 public class Zadanine12 {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите число ");
+     private static int proiz = 1;
+    private static int k = 10;
+    static String message = "";
+    private static int i ;
 
-        int proiz = 1;
-        int k;
-        if (in.hasNextInt()){
-            int i = in.nextInt();
-            while (i > 0) {
-                k = i % 10;
-                proiz = proiz * k;
-                i = i / 10;
-            }
-            System.out.println("Произведение = " + proiz);
+    public static int umnozenieInt(int i){
+        for ( i = 1; i <= k; i++) {
+            proiz *= i;
+            message += i + " * ";
         }
-        if (in.hasNextDouble()) {
-            System.out.println("Введено не целое число");
-        } else if (in.hasNextLine()) {
-            System.out.println("Введено не  число");
-        }
+
+        message = message.substring(0, message.length() - 2);
+
+        System.out.println(message + "= " + k);
+        return 0;
+    }
+    public static double umnozenieDouble(double i){
+        System.out.println("Введено не целое число");
+        return 1;
     }
 
+    public static String umnozenieString(String  i){
+        System.out.println("Введено не  число");
+        return ("Введено не  число");
+    }
 }
 

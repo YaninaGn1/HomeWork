@@ -3,11 +3,10 @@
  */
 package home_work_2.Utils;
 
+import java.util.Random;
 import java.util.Scanner;
 public class ArraysUtils {
-    public static void main(String[] args) {
-        int[] container = arrayFromConsole();
-        }
+
     public static int[] arrayFromConsole() {
         Scanner in = new Scanner(System.in);
         System.out.print("Напишите размер массива ");
@@ -17,14 +16,24 @@ public class ArraysUtils {
         System.out.print("Напишите элементы массива ");
         for (int i = 0; i < length; i++) {
             array[i] = in.nextInt();
-
-            System.out.print("Элементы массива ");
         }
+        System.out.print("Элементы массива ");
+
         for (int i = 0; i < length; i++) {
                 System.out.print(" " + array[i]);
             }
             System.out.println(" ");
             return array;
+    }
+
+    public static int[] arrayRandom (int size, int maxValueExclusion) {
+        int array[] = new int[5];
+        Random container = new Random(maxValueExclusion);
+        for (int i = 0; i < size; i++) {
+            array[i] = container.nextInt(maxValueExclusion);
+            System.out.println(array[i]);
+        }
+        return array;
     }
 
 }

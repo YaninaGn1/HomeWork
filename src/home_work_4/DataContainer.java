@@ -32,11 +32,12 @@ public class DataContainer <T> {
     }
 
     public T get(int index) {
-        if (index > data.length) {
+        if (index < 0 || index >= data.length) {
             return null;
         } else {
             return data[index];
         }
+
     }
 
     public T[] getItems() {
@@ -47,7 +48,7 @@ public class DataContainer <T> {
         if (index > data.length - 1) {
             return false;
         } else if (index == 0) {
-            data = Arrays.copyOfRange(data, 1, data.length - 1);
+            data = Arrays.copyOf( data, data. length-1);
             return true;
         } else if (index == data.length - 1) {
             data = Arrays.copyOfRange(data, 0, data.length - 1);

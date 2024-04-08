@@ -2,28 +2,25 @@
 1.5.3. Посчитать четные и нечетные цифры числа
  */
 
-package loops;
-import java.util.Scanner;
+package home_work_2.loops;
+
 public class Zadanie153 {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите число ");
-        int i = in.nextInt();
+   private static int chetnoje = 0;
 
-        int chetnoje = 0;
-        int nechetnoje = 0;
+    private static int nechetnoje = 0;
 
-        while (i > 0) {
+    public static String  kolichestvo(int i) {
+
+        while (!(i == 0)) {
             if (i % 2 == 0) {
-                chetnoje++;
+                chetnoje = chetnoje + 1;
             } else {
-                nechetnoje++;
+                nechetnoje = nechetnoje + 1;
             }
             i = i / 10;
         }
-                System.out.println("Нечетное " + nechetnoje);
-                System.out.println("Четное " + chetnoje);
 
+        return ("chetnoje =" + chetnoje + " "+"nechetnoje =" +  nechetnoje);
 
     }
 }

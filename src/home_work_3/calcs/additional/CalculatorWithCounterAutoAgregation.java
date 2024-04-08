@@ -3,14 +3,14 @@ package home_work_3.calcs.additional;
 import home_work_3.calcs.simple.CalculatorWithMathCopy;
 
 public class CalculatorWithCounterAutoAgregation {
-    public CalculatorWithMathCopy calculator1;
-    public int schet ;
-    public int i = 0;
+    public static CalculatorWithMathCopy calculator1;
+    public static int schet ;
+    public static int i = 0;
     public CalculatorWithCounterAutoAgregation(CalculatorWithMathCopy calculator) {
         this.calculator1 = calculator;
     }
 
-      public  double delenie (double a, double b){
+      public static double delenie (double a, double b){
           schet = i++;
           double c = calculator1.delenie (a,b);
           return c;
