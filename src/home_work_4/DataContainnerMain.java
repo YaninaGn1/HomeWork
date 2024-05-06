@@ -1,5 +1,4 @@
 package home_work_4;
-import home_work_4.DataContainer;
 
 public class DataContainnerMain {
     public static void main(String[] args) {

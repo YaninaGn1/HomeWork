@@ -5,6 +5,7 @@ import home_work_1.Zadanine44;
 import java.util.Scanner;
 
 public class Zadanine44Main {
+    private static double a ;
 
     /** 4.4 Перевести байты в килобайты или наоборот
      *  вернуть  0.0 если перевод удался

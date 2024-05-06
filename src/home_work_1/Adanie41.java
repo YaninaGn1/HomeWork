@@ -10,7 +10,7 @@ public Adanie41(){
          */
         public static double chetnost( double a) {
          double b = a % 2;
-          if (b == 0) {
+                   if (b == 0) {
               System.out.println(" a - четное" + " ");
           } else {
             System.out.print("a - нечетное" + " ");

@@ -15,7 +15,7 @@ public class DataContainer <T> {
      * Добовляет в себя данные
      */
     public int add(T item) {
-        if (item == null) {
+              if (item == null) {
             return (-1);
         } else {
             for (int a = 0; a < data.length; a++) {

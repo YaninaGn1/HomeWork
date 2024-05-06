@@ -12,6 +12,7 @@ private double a;
         Scanner in = new Scanner(System.in);
         System.out.print("Input  a: ");
 
+
        System.out.print( Adanie41.chetnost( in.nextDouble()) + " " + " - Остаток от деления на 2 ");
     }
 

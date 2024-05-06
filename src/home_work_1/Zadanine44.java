@@ -13,6 +13,7 @@ public class Zadanine44 {
      *  вернуть  -1.0 если перевод не удался
      */
     public static double perevod(double a){
+
         if (a > 0){
             System.out.println("Колличество килобайт " + (a * 1024) );
             System.out.println("Колличество байт " + (a / 1024) );
