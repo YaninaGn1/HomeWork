@@ -1,27 +1,27 @@
 package home_work_6;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.*;
 
 public class Zadanie2 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        Scanner console = new Scanner(System.in);
+        System.out.println("Введите адрес файла");
+        String path = console.nextLine();
+        File file = new File(path);
 
-        try (FileReader reader = new FileReader("E://Java//Война и мир_книга.txt");
-             BufferedReader buf = new BufferedReader(reader)) {
-            StringBuilder text = new StringBuilder();
+        String text = Files.readString(Path.of(path));
 
-            String[] array = text.toString().split(" " );
-
-
+        try (BufferedReader buf = new BufferedReader(new FileReader(file))) {
+            StringBuilder text1 = new StringBuilder();
 
             Map<String, Word> countMap = new HashMap<String, Word>();
 
             String line;
             while ((line = buf.readLine()) != null) {
-                String[] words = line.split("[{|}| |\"|'|!|)|(|@|#|$|^|]");
+                String[] words = line.split("[{|}| +|\"|'|!|-|;|. |)|(|@|#|$|^|]|-+|,");
                 for (String word : words) {
                     if ("".equals(word)) {
                         continue;

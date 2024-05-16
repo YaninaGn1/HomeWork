@@ -1,25 +1,64 @@
 package home_work_6;
 
+import home_work_6.api.ISearchEngine;
+
 public class EasySearch implements ISearchEngine {
-    private int kolRaz = 0;
+    private final static char[] splitChar = {
+            ' ', '\n', ',', '.', '-', '!', '?'
+    };
 
        @Override
-    public long search(String text, String word) {
-        int index = 0;
+       public long search(String text, String word) {
+           int textLength = text.length();
+           int wordLength = word.length();
 
-           while (index < text.length() && index != -1) {
-               index = text.indexOf(word, index);
-               if (index == -1 && kolRaz == 0){
-                   System.out.println("В тексте нет такого слова");
-                   return -1;
-               } else
-               if (index == -1){
-                   return kolRaz;
+           long count = 0;
+           int currentPosition = 0;
+           while ((currentPosition = text.indexOf(word, currentPosition)) != -1){
+               int indexNextCharAfterWord = currentPosition + wordLength;
+
+               boolean needCheckBefore = currentPosition > 0;
+               boolean needCheckAfter = indexNextCharAfterWord < textLength;
+
+               boolean charBeforeIsSplit = true;
+               boolean charAfterIsSplit = true;
+
+
+               if(needCheckBefore){
+                   charBeforeIsSplit = isSplitChar2(text.charAt(currentPosition-1));
                }
-               index = index + word.length() + 1;
-               kolRaz++;
+
+               if(needCheckAfter){
+                   charAfterIsSplit = isSplitChar2(text.charAt(indexNextCharAfterWord));
+               }
+
+               if(charBeforeIsSplit && charAfterIsSplit){
+                   count++;
+               }
+
+               currentPosition++;
            }
-            
-        return kolRaz;
+           return count;
+       }
+
+    public boolean isSplitChar(char ch){
+        return ch == ' '
+                || ch == '\n'
+                || ch == ','
+                || ch == '.'
+                || ch == '-'
+                || ch == '!'
+                || ch == '?'
+                ;
+    }
+
+    public boolean isSplitChar2(char ch){
+        for (char split : splitChar) {
+            if(split == ch){
+                return true;
+            }
+        }
+
+        return false;
     }
 }
