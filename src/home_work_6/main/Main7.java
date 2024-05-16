@@ -7,7 +7,7 @@ public class Main7 implements ISearchEngine {
 
     }
 
-    
+
     @Override
     public long search(String text, String word) {
         return 0;
